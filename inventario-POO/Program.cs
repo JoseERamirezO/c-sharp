@@ -18,6 +18,8 @@ namespace inventario
                 Console.WriteLine("1 - Productos");
                 Console.WriteLine("2 - Ingreso de Inventario");
                 Console.WriteLine("3 - Salida de Inventario");
+                Console.WriteLine("4 - ajuste Negativo");
+                Console.WriteLine("5 - ajuste Positivo");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
 
@@ -28,7 +30,13 @@ namespace inventario
                         break;
                     case "2":
                         inventario.ingresoDeInventario();
-                        break;                        
+                        break; 
+                    case "4":
+                        inventario.ajusteNegativo();
+                        break;
+                    case "5":
+                        inventario.ajustePositivo();
+                        break;                       
                     default:
                     break;
                 }
